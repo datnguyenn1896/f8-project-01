@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/f8-project-01/static/css/main.61649ffa.css",
-    "main.js": "/f8-project-01/static/js/main.6983d438.js",
+    "main.js": "/f8-project-01/static/js/main.87d188dd.js",
     "static/js/787.9ba9943a.chunk.js": "/f8-project-01/static/js/787.9ba9943a.chunk.js",
-    "static/media/Vietcombank.png": "/f8-project-01/static/media/Vietcombank.8f9e59f59e697e4214be.png",
+    "static/media/Mb.png": "/f8-project-01/static/media/Mb.8f9e59f59e697e4214be.png",
     "static/media/Poppins-Regular.woff": "/f8-project-01/static/media/Poppins-Regular.33c75e7efe1d4aec0d88.woff",
     "static/media/Poppins-Medium.woff": "/f8-project-01/static/media/Poppins-Medium.fc109cd335592dd143ce.woff",
     "static/media/Poppins-SemiBold.woff": "/f8-project-01/static/media/Poppins-SemiBold.b0e71616869e731dde0d.woff",
@@ -16,11 +16,11 @@
     "static/media/Poppins-Bold.woff2": "/f8-project-01/static/media/Poppins-Bold.00bab97c5d7a67fd976c.woff2",
     "index.html": "/f8-project-01/index.html",
     "main.61649ffa.css.map": "/f8-project-01/static/css/main.61649ffa.css.map",
-    "main.6983d438.js.map": "/f8-project-01/static/js/main.6983d438.js.map",
+    "main.87d188dd.js.map": "/f8-project-01/static/js/main.87d188dd.js.map",
     "787.9ba9943a.chunk.js.map": "/f8-project-01/static/js/787.9ba9943a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61649ffa.css",
-    "static/js/main.6983d438.js"
+    "static/js/main.87d188dd.js"
   ]
 }
