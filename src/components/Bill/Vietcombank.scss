@@ -1,0 +1,97 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 50px 0 50px;
+
+  #phone-frame {
+    position: relative;
+    .screen {
+      width: 360px;
+    }
+    .hour {
+      position: absolute;
+      top: 1.5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 1.3rem;
+    }
+    .time {
+      position: absolute;
+      top: 468px;
+      right: -53.6px;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    .toName {
+      position: absolute;
+      top: 257px;
+      left: 66.4px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .toNumberBank {
+      position: absolute;
+      top: 276px;
+      left: 66.4px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    .fromName {
+      position: absolute;
+      top: 388px;
+      right: 24.4px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .fromNumberBank {
+      position: absolute;
+      top: 369px;
+      right: 24.4px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    .content-chuyen-tien {
+      position: absolute;
+      top: 414px;
+      right: 24.4px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: right;
+      word-wrap: break-word; /* hoặc sử dụng overflow-wrap: break-word; */
+      max-width: 50%;
+      line-height: 1.8rem;
+    }
+    .code {
+      position: absolute;
+      top: 531px;
+      right: 24.4px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.8rem;
+    }
+  }
+  .settings {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    .MuiInputBase-input {
+      font-size: 1.5rem;
+    }
+    .MuiFormLabel-root {
+      font-size: 1.5rem;
+    }
+    .MuiButtonBase-root {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+}
