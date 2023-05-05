@@ -6,7 +6,9 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/Inbox";
 import DraftsIcon from "@mui/icons-material/Drafts";
 import { useState } from "react";
-import Vietcombank from "../Bill/Vietcombank";
+import Mb from "../Mb/Mb";
+import Seabank from "../Seabank/Seabank";
+
 import "./Menu.scss";
 const Menu = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -31,7 +33,7 @@ const Menu = () => {
             <ListItemIcon>
               <InboxIcon />
             </ListItemIcon>
-            <ListItemText primary="Vietcombank" />
+            <ListItemText primary="MBank" />
           </ListItemButton>
           <ListItemButton
             selected={selectedIndex === 1}
@@ -53,7 +55,8 @@ const Menu = () => {
           </ListItemButton>
         </List>
       </Box>
-      {selectedIndex === 0 && <Vietcombank />}
+      {selectedIndex === 0 && <Mb />}
+      {selectedIndex === 1 && <Seabank />}
     </div>
   );
 };

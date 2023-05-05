@@ -1,23 +1,24 @@
-import imgVcb from "../../assets/img/Vietcombank.png";
-import "./Vietcombank.scss";
+import imgVcb from "../../assets/img/seabank.png";
+import "./Seabank.scss";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { useState } from "react";
 import html2canvas from "html2canvas";
 import Button from "@mui/material/Button";
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
-const Vietcombank = (props) => {
+const Mb = (props) => {
   const [hour, setHour] = useState("16:02");
   const [time, setTime] = useState("16:02:57, 28/03/2023");
   const [toName, setToName] = useState("NGUYEN VAN DAT");
   const [toNumberBank, setToNumberBank] = useState("1027312304");
+  const [amount, setAmount] = useState("1,000,000 VND");
 
   const [fromName, setFromName] = useState("NGUYEN VAN DAT");
   const [fromNumberBank, setFromNumberBank] = useState("1027312304");
-  const [content, setContent] = useState(
-    "huynh thanh phong ck coc mua do shop sinh"
-  );
+  const [content, setContent] = useState("huynh thanh phong ck");
   const [code, setCode] = useState("FT 23118739636940");
+  const [toNameBank, setToNameBank] = useState("Ngân hàng TMCP Đông Nam Á");
+
   const [result, setResult] = useState("");
 
   const handleInputChangeToName = (value) => {
@@ -43,17 +44,20 @@ const Vietcombank = (props) => {
   };
 
   return (
-    <div className="main">
+    <div className="main-seabank">
       <div id="phone-frame">
         <img className="screen" src={imgVcb} alt="VCB"></img>
         <p className="hour">{hour}</p>
         <p className="time">{time}</p>
         <p className="toName">{toName}</p>
         <p className="toNumberBank">{toNumberBank}</p>
+        <p className="toNameBank">{toNameBank}</p>
         <p className="fromName">{fromName}</p>
         <p className="fromNumberBank">{fromNumberBank}</p>
         <p className="content-chuyen-tien">{content}</p>
         <p className="code">{code}</p>
+        <p className="amount">{amount}</p>
+        <p className="total">{amount}</p>
       </div>
       <div className="settings">
         <Box
@@ -72,10 +76,42 @@ const Vietcombank = (props) => {
           />
           <TextField
             id="outlined-required"
-            label="Thời gian"
-            defaultValue="16:02:57, 28/03/2023"
-            onChange={(event) => setTime(event.target.value)}
+            label="Mã giao dịch"
+            // defaultValue="NGUYEN VAN DAT"
+            value={code}
+            onChange={(event) => setCode(event.target.value)}
           />
+          <TextField
+            id="outlined-required"
+            label="Số tài khoản chuyển tiền"
+            // defaultValue="NGUYEN VAN DAT"
+            value={fromNumberBank}
+            onChange={(event) => setFromNumberBank(event.target.value)}
+          />
+
+          <TextField
+            id="outlined-required"
+            label="Tên người chuyển tiền"
+            // defaultValue="NGUYEN VAN DAT"
+            value={fromName}
+            onChange={(event) => handleInputChangeFromName(event.target.value)}
+          />
+
+          <TextField
+            id="outlined-required"
+            label="Ngân hàng thụ hưởng"
+            // defaultValue="NGUYEN VAN DAT"
+            value={toNameBank}
+            onChange={(event) => setToNameBank(event.target.value)}
+          />
+          <TextField
+            id="outlined-required"
+            label="Số tài khoản thụ hưởng"
+            // defaultValue="NGUYEN VAN DAT"
+            value={toNumberBank}
+            onChange={(event) => setToNumberBank(event.target.value)}
+          />
+
           <TextField
             id="outlined-required"
             label="Tên người thụ hưởng"
@@ -85,25 +121,19 @@ const Vietcombank = (props) => {
           />
           <TextField
             id="outlined-required"
-            label="Số tài khoản thụ hưởng"
+            label="Số tiền"
             // defaultValue="NGUYEN VAN DAT"
-            value={toNumberBank}
-            onChange={(event) => setToNumberBank(event.target.value)}
+            value={amount}
+            onChange={(event) => setAmount(event.target.value)}
           />
+
           <TextField
             id="outlined-required"
-            label="Tên người chuyển tiền"
-            // defaultValue="NGUYEN VAN DAT"
-            value={fromName}
-            onChange={(event) => handleInputChangeFromName(event.target.value)}
+            label="Thời gian"
+            defaultValue="16:02:57, 28/03/2023"
+            onChange={(event) => setTime(event.target.value)}
           />
-          <TextField
-            id="outlined-required"
-            label="Số tài khoản chuyển tiền"
-            // defaultValue="NGUYEN VAN DAT"
-            value={fromNumberBank}
-            onChange={(event) => setFromNumberBank(event.target.value)}
-          />
+
           <TextField
             id="outlined-required"
             label="Nội dung chuyển tiền"
@@ -111,13 +141,7 @@ const Vietcombank = (props) => {
             value={content}
             onChange={(event) => setContent(event.target.value)}
           />
-          <TextField
-            id="outlined-required"
-            label="Mã giao dịch"
-            // defaultValue="NGUYEN VAN DAT"
-            value={code}
-            onChange={(event) => setCode(event.target.value)}
-          />
+
           <Button
             variant="outlined"
             startIcon={<PhotoCamera />}
@@ -134,4 +158,4 @@ const Vietcombank = (props) => {
   );
 };
 
-export default Vietcombank;
+export default Mb;

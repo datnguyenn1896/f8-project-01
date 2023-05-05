@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 50px 50px 0 50px;
+  margin: 30px 30px 0 30px;
 
   #phone-frame {
     position: relative;
@@ -23,7 +23,6 @@
       right: -53.6px;
       transform: translate(-50%, -50%);
       font-size: 1.5rem;
-      font-weight: 400;
       white-space: nowrap;
     }
     .toName {
@@ -40,6 +39,17 @@
       left: 66.4px;
       font-size: 1.5rem;
       font-weight: 400;
+      white-space: nowrap;
+    }
+    .amount {
+      font-family: "Scanno";
+      font-weight: bold;
+      color: #fff;
+      position: absolute;
+      top: 136px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
       white-space: nowrap;
     }
     .fromName {
@@ -84,14 +94,19 @@
     // justify-content: center;
     // align-items: center;
     .MuiInputBase-input {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     .MuiFormLabel-root {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     .MuiButtonBase-root {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 700;
+    }
+  }
+  .result {
+    .img-result {
+      width: 360px;
     }
   }
 }

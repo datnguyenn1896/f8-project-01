@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Scanno";
+  src: url("Scanno/Scanno-Light.woff2") format("woff2"),
+    url("Scanno/Scanno-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Scanno";
+  src: url("Scanno/Scanno-Bold.woff2") format("woff2"),
+    url("Scanno/Scanno-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
